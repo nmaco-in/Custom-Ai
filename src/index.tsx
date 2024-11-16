@@ -14,7 +14,7 @@ app.use(renderer);
 
 app.get("/", (c) => {
   const DEFAULT_MODEL = "@cf/meta/llama-2-7b-chat-fp16"; // Default model
-  const DEFAULT_SYSTEM_MESSAGE = 'you are a good assistant`; // write your system prompy here
+  const DEFAULT_SYSTEM_MESSAGE = "you are a good assistant"; // write your system prompy here
 
   const handleChatSettings = () => {
     const modelSelect = document.getElementById("model-select") as HTMLSelectElement;
