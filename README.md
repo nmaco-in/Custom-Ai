@@ -6,9 +6,9 @@ A web based chat interface built on [Cloudflare Pages](https://pages.cloudflare.
 
 This project makes use of [LocalStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to maintain state. We have better solutions available (more coming soon).
 
-please dont forget to update your system prompt in [index.tsx](src/index.tsx) and [script.js](public/static/script.js)
+# please dont forget to update your system prompt in [index.tsx](src/index.tsx) and [script.js](public/static/script.js)
 
-upload your logo i.e [logo.png](/public/static/logo.png)  and [favicon.ico](/public/static/favicon.ico)  in [public/static](/public/static/) 
+# upload your logo i.e [logo.png](/public/static/logo.png)  and [favicon.ico](/public/static/favicon.ico)  in [public/static](/public/static/) 
 
 This is a template repository. Please feel free to create your own repository from this one by using the "Use this template" button. It's right next to the ⭐️ this repo button, which you could totally do as well if you wanted to.
 
