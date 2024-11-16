@@ -52,33 +52,5 @@ npm run deploy
 npx wrangler pages deployment tail
 ```
 
-## Advanced
-
-If you are on a Mac, you can generate the list of models in [script.js](./public/static/script.js) by running the following commands:
-
-```bash
-# If this is your first time here. You won't regret it.
-brew install jq
-```
-
-```bash
-# Filter all Text Generation models into "ga" and "beta"
-npx wrangler ai models --json | jq ' 
-  reduce .[] as $item (
-    {beta: [], ga: []};
-    if ($item.task.name == "Text Generation") then
-      if ($item.properties | any(.property_id == "beta" and .value == "true")) then
-        .beta += [$item.name]
-      else
-        .ga += [$item.name]
-      end
-    else
-      .
-    end
-  ) |
-  .beta |= sort |
-  .ga |= sort
-'
-```
 
 # by: [R3AP3Reditz](https://github.com/iotserver24)
